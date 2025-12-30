@@ -98,15 +98,31 @@
             <tbody>
               <tr class="status-go">
                 <td>Boarding/On Time</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr class="status-wait">
                 <td>Fueling</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr class="status-delay">
                 <td>Delayed</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr class="status-stop">
                 <td>Cancelled</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
               </tr>
             </tbody>
             <tfoot>
@@ -118,45 +134,50 @@
       <section id="booking">
         <div class="kiosk-interface">
           <h2>SELF-SERVICE TERMINAL.</h2>
-          <form action="#" method="POST"></form>
-          <fieldset>
-            <legend>IDENTITY VERIFICATION</legend>
-            <label for="Full Designation">Full Designation:</label>
-            <input
-              type="text"
-              id="Full Designation"
-              name="Full Designation"
-              required
-            />
-            <label for="id-code">ID Code:</label>
-            <input type="text" id="id-code" name="id_code" required />
-          </fieldset>
+          <form action="#" method="POST">
+            <fieldset>
+              <legend>IDENTITY VERIFICATION</legend>
+              <label for="Full Designation">Full Designation:</label>
+              <input
+                type="text"
+                id="Full Designation"
+                name="Full Designation"
+                required
+              />
+              <label for="id-code">ID Code:</label>
+              <input type="text" id="id-code" name="id_code" required />
+            </fieldset>
 
-          <fieldset>
-            <legend>FLIGHT PARAMETERS</legend>
-            <label for="destination">Destination:</label>
-            <input
-              type="text"
-              id="destination"
-              name="destination"
-              list="planets"
-              placeholder="Choose a destination"
-            />
+            <fieldset>
+              <legend>FLIGHT PARAMETERS</legend>
+              <label for="destination">Destination:</label>
+              <input
+                type="text"
+                id="destination"
+                name="destination"
+                list="planets"
+                placeholder="Choose a destination"
+              />
 
-            <datalist id="planets">
-              <option value="Kepler-186f"></option>
-              <option value="Titan Station"></option>
-              <option value="Nebula Resort"></option>
-              <option value="Event Horizon"></option>
-            </datalist>
-            <label for="Cabin Class">Cabin Class:</label>
-            <select name="Cabin Class" id="Cabin Class" required>
-              <option value="Economy (Stasis Pod)"></option>
-              <option value="Business (Quarters)"></option>
-              <option value="First (Zero-G Suite)"></option>
-            </select>
-            <button type="submit">AUTHORIZE CREDIT TRANSFER.</button>
-          </fieldset>
+              <datalist id="planets">
+                <option value="Kepler-186f">Kepler-186f</option>
+                <option value="Titan Station">Titan Station</option>
+                <option value="Nebula Resort">Nebula Resort</option>
+                <option value="Event Horizon">Event Horizon</option>
+              </datalist>
+              <label for="Cabin Class">Cabin Class:</label>
+              <select name="Cabin Class" id="Cabin Class" required>
+                <option value="Economy (Stasis Pod)">
+                  Economy (Stasis Pod)
+                </option>
+                <option value="Business (Quarters)">Business (Quarters)</option>
+                <option value="First (Zero-G Suite)">
+                  First (Zero-G Suite)
+                </option>
+              </select>
+              <button type="submit">AUTHORIZE CREDIT TRANSFER.</button>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>
